@@ -20,7 +20,7 @@ import com.bugarin.arvin.shop.repository.CartItemRepository;
 import com.bugarin.arvin.shop.service.CartService;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/shop-cart")
 public class CartController {
 	
 	private Logger logger = LoggerFactory.getLogger(CartController.class);
@@ -31,7 +31,7 @@ public class CartController {
 	@Autowired
 	CartItemRepository cartItemRepository;
 	
-	@GetMapping("/cart")
+	@GetMapping("/carts")
 	public Iterable<Cart> getAllCarts() {
 	    return cartService.findAllCarts();
 	}

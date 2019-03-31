@@ -13,14 +13,14 @@ import com.bugarin.arvin.shop.model.Customer;
 import com.bugarin.arvin.shop.service.CustomerService;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/shop-customer")
 public class CustomerController {
 	
 	
 	@Autowired
 	CustomerService customerService;
 	
-	@GetMapping("/customer")
+	@GetMapping("/customers")
 	public Iterable<Customer> getAllCustomers() {
 	    return customerService.findAllCustomers();
 	}

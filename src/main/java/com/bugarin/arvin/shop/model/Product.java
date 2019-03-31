@@ -20,7 +20,8 @@ public class Product {
 	@Column(nullable = false)
 	private String name;
 
-	private String brand;
+	@Column(length = 355)
+	private String description;
 
 	private double price;
 
@@ -30,10 +31,10 @@ public class Product {
 		super();
 	}
 
-	public Product(String name, String brand, double price, String imageUrl) {
+	public Product(String name, String description, double price, String imageUrl) {
 		super();
 		this.name = name;
-		this.brand = brand;
+		this.description = description;
 		this.price = price;
 		this.imageUrl = imageUrl;
 	}
@@ -54,12 +55,12 @@ public class Product {
 		this.name = name;
 	}
 
-	public String getBrand() {
-		return brand;
+	public String getDescription() {
+		return description;
 	}
 
-	public void setBrand(String brand) {
-		this.brand = brand;
+	public void setDescription(String description) {
+		this.description = description;
 	}
 
 	public double getPrice() {
@@ -80,8 +81,8 @@ public class Product {
 
 	@Override
 	public String toString() {
-		return "Product [id=" + id + ", name=" + name + ", brand=" + brand + ", price=" + price + ", imageUrl="
-				+ imageUrl + "]";
+		return "Product [id=" + id + ", name=" + name + ", description=" + description + ", price=" + price
+				+ ", imageUrl=" + imageUrl + "]";
 	}
 
 }

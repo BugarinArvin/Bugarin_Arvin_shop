@@ -1,13 +1,13 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["styles"],{
 
-/***/ "./node_modules/@angular-devkit/build-angular/src/angular-cli-files/plugins/raw-css-loader.js!./node_modules/postcss-loader/src/index.js?!./src/styles.css":
-/*!*****************************************************************************************************************************************************************!*\
-  !*** ./node_modules/@angular-devkit/build-angular/src/angular-cli-files/plugins/raw-css-loader.js!./node_modules/postcss-loader/src??embedded!./src/styles.css ***!
-  \*****************************************************************************************************************************************************************/
+/***/ "./node_modules/@angular-devkit/build-angular/src/angular-cli-files/plugins/raw-css-loader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./src/styles.scss":
+/*!**********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/@angular-devkit/build-angular/src/angular-cli-files/plugins/raw-css-loader.js!./node_modules/postcss-loader/src??embedded!./node_modules/sass-loader/lib/loader.js??ref--14-3!./src/styles.scss ***!
+  \**********************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = [[module.i, "/* You can add global styles to this file, and also import other style files */\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9zdHlsZXMuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLDhFQUE4RSIsImZpbGUiOiJzcmMvc3R5bGVzLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qIFlvdSBjYW4gYWRkIGdsb2JhbCBzdHlsZXMgdG8gdGhpcyBmaWxlLCBhbmQgYWxzbyBpbXBvcnQgb3RoZXIgc3R5bGUgZmlsZXMgKi9cbiJdfQ== */", '', '']]
+module.exports = [[module.i, "h1, h2, h3, h4, h5, h6 {\n  font-family: 'Montserrat', sans-serif; }\n\np {\n  font-family: 'BioRhyme', serif; }\n\n.top-bar {\n  background-color: rgba(51, 51, 51, 0.9);\n  color: white;\n  box-shadow: 0 0 10px rgba(51, 51, 51, 0.6);\n  margin-bottom: 1rem; }\n\n.top-bar ul {\n    background-color: transparent; }\n\n.text--red {\n  color: #b12704; }\n\n.text--bold {\n  font-weight: bold; }\n\n.button {\n  border-radius: 4px;\n  vertical-align: bottom; }\n\n.button.success {\n    background-color: #5D8B00;\n    padding: 1rem 3rem;\n    color: #fff; }\n\n.button.success:hover {\n      color: #fff; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9DOlxcVXNlcnNcXEFydmluXFxhcmNoLXdvcmtzcGFjZVxcc2hvcFxcc3JjXFxtYWluXFxzaG9wLXVpL3NyY1xcc3R5bGVzLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxxQ0FBcUMsRUFBQTs7QUFHdkM7RUFDRSw4QkFBOEIsRUFBQTs7QUFHaEM7RUFDRSx1Q0FBb0M7RUFDcEMsWUFBWTtFQUNaLDBDQUF1QztFQUN2QyxtQkFBbUIsRUFBQTs7QUFKckI7SUFPSSw2QkFBNkIsRUFBQTs7QUFJakM7RUFDRSxjQUFjLEVBQUE7O0FBR2hCO0VBQ0UsaUJBQWlCLEVBQUE7O0FBR25CO0VBQ0Usa0JBQWtCO0VBQ2xCLHNCQUFzQixFQUFBOztBQUZ4QjtJQUtJLHlCQUF5QjtJQUN6QixrQkFBa0I7SUFDbEIsV0FBVyxFQUFBOztBQVBmO01BVU0sV0FBVyxFQUFBIiwiZmlsZSI6InNyYy9zdHlsZXMuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbImgxLCBoMiwgaDMsIGg0LCBoNSwgaDYge1xyXG4gICAgZm9udC1mYW1pbHk6ICdNb250c2VycmF0Jywgc2Fucy1zZXJpZjtcclxuICB9XHJcbiAgXHJcbiAgcCB7XHJcbiAgICBmb250LWZhbWlseTogJ0Jpb1JoeW1lJywgc2VyaWY7XHJcbiAgfVxyXG4gIFxyXG4gIC50b3AtYmFyIHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IHJnYmEoNTEsNTEsNTEsMC45KTtcclxuICAgIGNvbG9yOiB3aGl0ZTtcclxuICAgIGJveC1zaGFkb3c6IDAgMCAxMHB4IHJnYmEoNTEsNTEsNTEsMC42KTtcclxuICAgIG1hcmdpbi1ib3R0b206IDFyZW07XHJcbiAgXHJcbiAgICB1bCB7XHJcbiAgICAgIGJhY2tncm91bmQtY29sb3I6IHRyYW5zcGFyZW50O1xyXG4gICAgfVxyXG4gIH1cclxuICBcclxuICAudGV4dC0tcmVkIHtcclxuICAgIGNvbG9yOiAjYjEyNzA0O1xyXG4gIH1cclxuICBcclxuICAudGV4dC0tYm9sZCB7XHJcbiAgICBmb250LXdlaWdodDogYm9sZDtcclxuICB9XHJcbiAgXHJcbiAgLmJ1dHRvbiB7XHJcbiAgICBib3JkZXItcmFkaXVzOiA0cHg7XHJcbiAgICB2ZXJ0aWNhbC1hbGlnbjogYm90dG9tO1xyXG4gIFxyXG4gICAgJi5zdWNjZXNzIHtcclxuICAgICAgYmFja2dyb3VuZC1jb2xvcjogIzVEOEIwMDtcclxuICAgICAgcGFkZGluZzogMXJlbSAzcmVtO1xyXG4gICAgICBjb2xvcjogI2ZmZjtcclxuICBcclxuICAgICAgJjpob3ZlciB7XHJcbiAgICAgICAgY29sb3I6ICNmZmY7XHJcbiAgICAgIH1cclxuICAgIH1cclxuICB9XHJcbiAgIl19 */", '', '']]
 
 /***/ }),
 
@@ -520,15 +520,15 @@ module.exports = function (css) {
 
 /***/ }),
 
-/***/ "./src/styles.css":
-/*!************************!*\
-  !*** ./src/styles.css ***!
-  \************************/
+/***/ "./src/styles.scss":
+/*!*************************!*\
+  !*** ./src/styles.scss ***!
+  \*************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../node_modules/@angular-devkit/build-angular/src/angular-cli-files/plugins/raw-css-loader.js!../node_modules/postcss-loader/src??embedded!./styles.css */ "./node_modules/@angular-devkit/build-angular/src/angular-cli-files/plugins/raw-css-loader.js!./node_modules/postcss-loader/src/index.js?!./src/styles.css");
+var content = __webpack_require__(/*! !../node_modules/@angular-devkit/build-angular/src/angular-cli-files/plugins/raw-css-loader.js!../node_modules/postcss-loader/src??embedded!../node_modules/sass-loader/lib/loader.js??ref--14-3!./styles.scss */ "./node_modules/@angular-devkit/build-angular/src/angular-cli-files/plugins/raw-css-loader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./src/styles.scss");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -551,13 +551,13 @@ if(false) {}
 /***/ }),
 
 /***/ 3:
-/*!******************************!*\
-  !*** multi ./src/styles.css ***!
-  \******************************/
+/*!*******************************!*\
+  !*** multi ./src/styles.scss ***!
+  \*******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\Arvin\arch-workspace\shop\src\main\shop-ui\src\styles.css */"./src/styles.css");
+module.exports = __webpack_require__(/*! C:\Users\Arvin\arch-workspace\shop\src\main\shop-ui\src\styles.scss */"./src/styles.scss");
 
 
 /***/ })

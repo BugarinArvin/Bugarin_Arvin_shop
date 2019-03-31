@@ -1,5 +1,7 @@
 package com.bugarin.arvin.shop.controller;
 
+import java.util.List;
+
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,16 +15,16 @@ import com.bugarin.arvin.shop.model.Product;
 import com.bugarin.arvin.shop.service.ProductService;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/shop-product")
 public class ProductController {
 	
 	
 	@Autowired
 	ProductService productService;
 	
-	@GetMapping("/product")
-	public Iterable<Product> getAllProducts() {
-	    return productService.findAllProducts();
+	@GetMapping("/products")
+	public List<Product> getAllProducts() {
+	    return (List<Product>) productService.findAllProducts();
 	}
 	
 	@PostMapping("/product")
