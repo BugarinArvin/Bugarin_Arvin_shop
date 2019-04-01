@@ -1,0 +1,30 @@
+<div class="top-bar">
+  <div class="top-bar-left">
+    <ul class="dropdown menu" data-dropdown-menu>
+      <li class="menu-text">
+        <h4>
+          <i class="material-icons md-48">face</i>
+          Welcome to Arvin Bugarin's Store!
+        </h4>
+      </li>
+    </ul>
+  </div>
+  <div class="top-bar-right" *ngIf="hasSession()">
+    <ul class="dropdown menu" data-dropdown-menu>
+      <li class="menu-text">
+        <h6>
+          <a routerLink="/store" class="text--bold">STORE</a>
+          &nbsp;&nbsp; &nbsp;
+          <a routerLink="/pipeline" class="text--bold">ORDERS</a>
+          &nbsp;&nbsp; &nbsp;
+          <a href="javascript:void(0)" (click)="signout()" class="text--bold">SIGNOUT</a>
+        </h6>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="row">
+  <div class="small-12 columns">
+    <router-outlet></router-outlet>
+  </div>
+</div>

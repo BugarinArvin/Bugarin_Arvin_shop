@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  template: "<router-outlet></router-outlet>"
+  template: "<app-main></app-main>"
 })
 export class AppComponent {
   title = 'shop-ui';

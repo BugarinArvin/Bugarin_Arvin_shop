@@ -29,10 +29,14 @@ export class ShoppingBasketComponent implements OnInit {
     this.basketService.cartItems.subscribe(data => {
       this.getTotalPrice(data);
     })
+    this.getCustomer();
+  }
+
+  private getCustomer() {
     this.customer = this.customerService.customer;
-    if(this.isEmpty(this.customer)){
-        this.customer = JSON.parse(sessionStorage.getItem('customer'));
-        this.customerService.customer = this.customer;
+    if (this.isEmpty(this.customer)) {
+      this.customer = JSON.parse(sessionStorage.getItem('customer'));
+      this.customerService.customer = this.customer;
     }
   }
 
@@ -59,18 +63,17 @@ export class ShoppingBasketComponent implements OnInit {
   }
 
   submitOrder() {
-    this.orderService.submitOrder( this.customerService.customer, this.cartItems).subscribe(data=>{
-      console.log('order:'+data);
+    this.orderService.submitOrder(this.customerService.customer, this.cartItems).subscribe(data => {
     })
     this.router.navigate(["checkout"]);
   }
 
   isEmpty(obj) {
-    for(var key in obj) {
-        if(obj.hasOwnProperty(key))
-            return false;
+    for (var key in obj) {
+      if (obj.hasOwnProperty(key))
+        return false;
     }
     return true;
-}
+  }
 
 }

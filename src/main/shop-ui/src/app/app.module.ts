@@ -10,6 +10,7 @@ import { CustomerComponent } from './components/customer/customer.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ConfirmationComponent } from './components/confirmation/confirmation.component';
 import { OrderPipelineComponent } from './components/order-pipeline/order-pipeline.component';
+import { MainComponent } from './components/main/main.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { OrderPipelineComponent } from './components/order-pipeline/order-pipeli
     ShoppingBasketComponent,
     CustomerComponent,
     ConfirmationComponent,
-    OrderPipelineComponent
+    OrderPipelineComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,

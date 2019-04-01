@@ -3,7 +3,7 @@
 
     <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
       <div class="form-group">
-        <label for="username">Enter your name: </label>
+        <h5 for="username" class="text--bold" >Enter your name: </h5>
         <input type="text" formControlName="customerName" class="form-control"
           [ngClass]="{ 'is-invalid': submitted && f.customerName.errors }" />
         <div *ngIf="submitted && f.customerName.errors" class="invalid-feedback">
