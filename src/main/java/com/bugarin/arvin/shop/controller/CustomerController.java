@@ -4,12 +4,14 @@ import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.bugarin.arvin.shop.model.Customer;
+import com.bugarin.arvin.shop.model.CustomerResponse;
 import com.bugarin.arvin.shop.service.CustomerService;
 
 @RestController
@@ -23,6 +25,10 @@ public class CustomerController {
 	@GetMapping("/customers")
 	public Iterable<Customer> getAllCustomers() {
 	    return customerService.findAllCustomers();
+	}
+	@GetMapping("/customer/{customerName}")
+	public CustomerResponse getCustomerbyName(@PathVariable String customerName) {
+	    return customerService.getCustomerByName(customerName);
 	}
 	
 	@PostMapping("/customer")

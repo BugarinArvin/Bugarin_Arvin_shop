@@ -1,5 +1,7 @@
 package com.bugarin.arvin.shop.controller;
 
+import java.util.List;
+
 import javax.validation.Valid;
 
 import org.slf4j.Logger;
@@ -34,6 +36,11 @@ public class CartController {
 	@GetMapping("/carts")
 	public Iterable<Cart> getAllCarts() {
 	    return cartService.findAllCarts();
+	}
+	
+	@GetMapping("/carts/{customerId}")
+	public List<Cart> getCartsByCustomer(@PathVariable Long customerId) {
+	    return cartService.findCartsByCustomerId(customerId);
 	}
 	
 	@PostMapping("/cart")

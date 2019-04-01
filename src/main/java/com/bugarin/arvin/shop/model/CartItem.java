@@ -1,4 +1,5 @@
 package com.bugarin.arvin.shop.model;
+
 import java.math.BigDecimal;
 
 import javax.persistence.CascadeType;
@@ -15,26 +16,25 @@ import com.fasterxml.jackson.annotation.JsonBackReference;
 @Entity(name = "cartItem")
 public class CartItem {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
-   
-    @ManyToOne
-    @JoinColumn(name = "product_id")
-    private Product product;
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private Long id;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "cart_id", insertable = true, updatable = true)
-    @JsonBackReference
-    private Cart cart;
-    
-    public CartItem() {
-   	}
+	@ManyToOne
+	@JoinColumn(name = "product_id")
+	private Product product;
 
-    private int quantity;
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "cart_id", insertable = true, updatable = true)
+	@JsonBackReference
+	private Cart cart;
+	
+	private int quantity;
+	
+	private BigDecimal price;
 
-    
-    private BigDecimal unitPrice;
+	public CartItem() {
+	}
 
 	public Long getId() {
 		return id;
@@ -68,18 +68,18 @@ public class CartItem {
 		this.quantity = quantity;
 	}
 
-	public BigDecimal getUnitPrice() {
-		return unitPrice;
+	public BigDecimal getPrice() {
+		return price;
 	}
 
-	public void setUnitPrice(BigDecimal unitPrice) {
-		this.unitPrice = unitPrice;
+	public void setPrice(BigDecimal price) {
+		this.price = price;
 	}
 
 	@Override
 	public String toString() {
-		return "CartItem [id=" + id + ", product=" + product + ", cart=" + cart + ", quantity=" + quantity
-				+ ", unitPrice=" + unitPrice + "]";
+		return "CartItem [id=" + id + ", product=" + product + ", cart=" + cart + ", quantity=" + quantity + ", price="
+				+ price + "]";
 	}
-    
+	
 }

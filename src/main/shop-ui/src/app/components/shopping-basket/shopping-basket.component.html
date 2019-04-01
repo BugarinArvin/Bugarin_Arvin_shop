@@ -2,7 +2,8 @@
   <div class="small-12 columns">
     <h3>
       <i class="material-icons">shopping_basket</i>
-      Your Shopping Basket
+      {{customer?.name}}'s
+      <br> Shopping Basket
     </h3>
   </div>
 </div>
@@ -29,7 +30,7 @@
 <div *ngIf="cartItems.length > 0" class="row" style="text-align: right;">
   <div class="small-12 columns">
     <h5 class="text--bold">
-      TOTAL: 
+      TOTAL:
       <span class="text--red js-cart-total"> {{totalPrice | currency:"PHP":"symbol" }}</span>
     </h5>
   </div>
@@ -39,7 +40,7 @@
 <div class="row">
   <div class="small-12 columns">
     <a class="success button large expanded" [attr.disabled]="cartItems.length === 0 ? true : null"
-      routerLink="/checkout">Proceed To Checkout</a>
+      href="javascript:void(0)" (click)="submitOrder()">Checkout and Submit Order</a>
   </div>
 </div>
 <div class="row">

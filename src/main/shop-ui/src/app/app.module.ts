@@ -6,17 +6,25 @@ import { AppComponent } from './app.component';
 import { StoreComponent } from './components/store/store.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ShoppingBasketComponent } from './components/shopping-basket/shopping-basket.component';
+import { CustomerComponent } from './components/customer/customer.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { ConfirmationComponent } from './components/confirmation/confirmation.component';
+import { OrderPipelineComponent } from './components/order-pipeline/order-pipeline.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     StoreComponent,
-    ShoppingBasketComponent
+    ShoppingBasketComponent,
+    CustomerComponent,
+    ConfirmationComponent,
+    OrderPipelineComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [
   ],

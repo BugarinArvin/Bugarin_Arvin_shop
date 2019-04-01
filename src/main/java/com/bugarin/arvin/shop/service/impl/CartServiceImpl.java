@@ -1,6 +1,5 @@
 package com.bugarin.arvin.shop.service.impl;
 
-import java.util.HashSet;
 import java.util.List;
 import java.util.Optional;
 
@@ -12,7 +11,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import com.bugarin.arvin.shop.model.Cart;
-import com.bugarin.arvin.shop.model.CartItem;
 import com.bugarin.arvin.shop.repository.CartItemRepository;
 import com.bugarin.arvin.shop.repository.CartRepository;
 import com.bugarin.arvin.shop.service.CartService;
@@ -50,6 +48,11 @@ public class CartServiceImpl implements CartService {
 		logger.info("cart updated: {}", cart);
 
 		return ResponseEntity.status(HttpStatus.OK).body("Cart Successfully Updated");
+	}
+
+	@Override
+	public List<Cart> findCartsByCustomerId(Long id) {
+		return cartRepository.findByCustomerId(id);
 	}
 
 }
