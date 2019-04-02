@@ -12,11 +12,11 @@
 
 3. Change properties as per your MySQL installation:
 
-  **spring.datasource.username**
+    **spring.datasource.username**
   
- ** spring.datasource.password **
+    **spring.datasource.password **
   
-  (In the projects **application.properties** file)
+    (In the projects **application.properties** file)
   
 4. Install Node.js with NPM and, after that, an Angular CLI.
 
