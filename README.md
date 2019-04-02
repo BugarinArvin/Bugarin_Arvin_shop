@@ -21,7 +21,9 @@
 4. Install Node.js with NPM and, after that, an Angular CLI.
 
 5. Navigate to projects's **"src\main\shop-ui"** from a command line and run:
+
 	-**npm install**
+	
 	-**"npm run build"**
 
 6. Go to IDE and Run as Java Application: **"src\main\java\com\bugarin\arvin\shop\ShopApplication.java"**
