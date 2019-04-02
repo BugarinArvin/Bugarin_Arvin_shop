@@ -1,5 +1,6 @@
 **Project details:**
 **(API using Spring Boot and a client application that will consume the API using Angular)**
+
 *Angular CLI: 7.3.7
 *Node: 10.15.3
 *Angular: 7.2.11
