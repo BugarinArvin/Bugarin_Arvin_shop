@@ -12,19 +12,19 @@
 
 3. Change properties as per your MySQL installation:
 
+    (In the projects **application.properties** file)
+
     **spring.datasource.username**
   
-    **spring.datasource.password **
-  
-    (In the projects **application.properties** file)
+    **spring.datasource.password**  
   
 4. Install Node.js with NPM and, after that, an Angular CLI.
 
 5. Navigate to projects's **"src\main\shop-ui"** from a command line and run **"npm run build"** command.
 
-6. Go to IDE and Run as Java Application: "src\main\java\com\bugarin\arvin\shop\ShopApplication.java"
+6. Go to IDE and Run as Java Application: **"src\main\java\com\bugarin\arvin\shop\ShopApplication.java"**
 
-7. Finally, open a browser and go to "http://localhost:8080".
+7. Finally, open a browser and go to **"http://localhost:8080"**.
 
 
 You can email me at rvnbugarin@yahoo.com for questions.
