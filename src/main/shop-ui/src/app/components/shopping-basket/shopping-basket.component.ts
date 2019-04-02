@@ -58,6 +58,13 @@ export class ShoppingBasketComponent implements OnInit {
     this.getTotalPrice(this.cartItems);
   }
 
+  addItem(cartItem: CartItem) {
+    cartItem.quantity += 1;
+    cartItem.price += cartItem.product.price;
+    this.getTotalPrice(this.cartItems);
+  }
+
+
   emptyCart() {
     this.basketService.cartItems.next([]);
   }
