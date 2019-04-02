@@ -15,14 +15,16 @@
     </h6>
     <h6>
       <span class="text--bold js-cart-total">Quantity: {{cartItem.quantity}}</span>&nbsp;&nbsp;
-      <span (click)="addItem(cartItem)">
-        <a href="javascript:void(0)"> <i class="material-icons text--bold"
-            style="font-size:15px;color:blue;">add</i>plus</a>
-      </span>
-      &nbsp;&nbsp;&nbsp;
-      <span (click)="removeItem(cartItem)">
-        <a href="javascript:void(0)"> <i class="material-icons text--bold"
-            style="font-size:15px;color:red;">remove</i>minus</a>
+      <span style="float:right;">
+        <span (click)="addItem(cartItem)">
+          <a href="javascript:void(0)"> <i class="material-icons text--bold"
+              style="font-size:15px;color:blue;">add</i>plus</a>
+        </span>
+        &nbsp;&nbsp;
+        <span style="float:right;" (click)="removeItem(cartItem)">
+          <a href="javascript:void(0)"> <i class="material-icons text--bold"
+              style="font-size:15px;color:red;">remove</i>minus</a>
+        </span>
       </span>
     </h6>
     <h6>
